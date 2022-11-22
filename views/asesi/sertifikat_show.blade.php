@@ -255,7 +255,7 @@
                                                 <i class="fas fa-download"></i>
                                                 {{ $asu->name }} &nbsp; &nbsp; &nbsp; &nbsp;
                                             </a>
-                                            <img src="{{ url($asu->image) }}" width="100px" alt="">
+                                            <img src="{{ url("public/$asu->image") }}" width="100px" alt="">
                                             {{-- <br> {{ $asu->name }} --}}
                                         </a>
                                     </li>

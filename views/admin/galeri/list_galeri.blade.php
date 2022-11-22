@@ -67,7 +67,7 @@
                     <div class="card-body">
                         <figure class="effect-text-in">
                             @if ($asu->image)
-                                <img src="{{ url($asu->image) }}" alt="image">
+                                <img src="{{ url("public/$asu->image") }}" alt="image">
                             @else
                                 <img src="https://picsum.photos/1000/800/?random" alt="image">
                             @endif

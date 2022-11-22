@@ -110,10 +110,10 @@
     <div class="card col-md-6">
         <div class="card-body">
             @if ($tuk->image)
-                <img class="card-img-top" src="{{ url($tuk->image) }}" alt="Card image cap">
+                <img class="card-img-top" src="{{ url("public/$tuk->image") }}" alt="Card image cap">
             @else
                 <img class="card-img-top"
-                    src="{{ url('public/general/assets/images/Gedung-Kuliah-I-Laboratorium-Politeknik-Negeri-Ketapang.jpg') }}"
+                    src="{{ asset('public/general/assets/images/Gedung-Kuliah-I-Laboratorium-Politeknik-Negeri-Ketapang.jpg') }}"
                     alt="Card image cap">
             @endif
             <div class="card-body">

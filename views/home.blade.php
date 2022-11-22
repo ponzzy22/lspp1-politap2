@@ -12,10 +12,10 @@
     <link rel="shortcut icon" href="{{ url('public/assets/images/logo/lsp.png') }}" />
 </head>
 
-<body style="background-image: url('{{ url('public/images/back/1.jpg') }}')">
+<body style="background-image: url('{{ asset('public/images/back/1.jpg') }}')">
     <div class="container-scroller">
         <div class="container-fluid page-body-wrapper full-page-wrapper">
-            <div  style="background-image: url('{{ url('public/images/back/1.jpg') }}'); background-size: cover" class="content-wrapper d-flex align-items-center auth lock-full-bg">
+            <div  style="background-image: url('{{ asset('public/images/back/1.jpg') }}'); background-size: cover" class="content-wrapper d-flex align-items-center auth lock-full-bg">
                 <div class="row w-100">
                     <div class="col-lg-4 mx-auto">
                         <form class="pt-5">

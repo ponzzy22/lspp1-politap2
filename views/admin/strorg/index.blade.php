@@ -52,7 +52,7 @@
         </div>
         <div class="card">
             <div class="card-body">
-                <img src="{{ url($asu->image) }}" style="width: 900px" alt="">
+                <img src="{{ url("public/$asu->image") }}" style="width: 900px" alt="">
             </div>
         </div>
     @endforeach

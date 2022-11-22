@@ -102,9 +102,9 @@
                                                     </td>
                                                     <td class="py-1" style="align-content: right">
                                                         @if ($asu->image)
-                                                            <img src="{{ url($asu->image) }}" alt="image">
+                                                            <img src="{{ url("public/$asu->image") }}" alt="image">
                                                         @else
-                                                            <img src="{{ url('public/general/assets/images/photo.jpg') }}"
+                                                            <img src="{{ asset('public/general/assets/images/photo.jpg') }}"
                                                                 alt="image">
                                                         @endif
                                                     </td>

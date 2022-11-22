@@ -23,7 +23,7 @@
             data-animation-duration="1000" data-animation-direction="X">
             <div class="u-container-layout u-container-layout-2">
                 <img class="u-image u-image-1"
-                    src="{{ url($pengelola->image) }}"
+                    src="{{ url("public/$pengelola->image") }}"
                     data-image-width="1280" data-image-height="853">
             </div>
         </div>

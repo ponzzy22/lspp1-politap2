@@ -15,7 +15,7 @@
                             <div class="u-container-layout u-valign-middle-sm u-valign-middle-xs u-container-layout-1">
                                 <h1 class="u-custom-font u-font-merriweather u-text u-text-default u-title u-text-1"
                                     data-animation-name="customAnimationIn" data-animation-duration="1000"><span
-                                        class="u-file-icon u-icon u-icon-1"><img src="{{ url('public/images/logo2/1.png') }}"
+                                        class="u-file-icon u-icon u-icon-1"><img src="{{ asset('public/images/logo2/1.png') }}"
                                             alt=""></span>&nbsp;Pemegang Sertifikat
                                 </h1>
                                 <div class="u-border-3 u-border-custom-color-2 u-line u-line-horizontal u-line-1"

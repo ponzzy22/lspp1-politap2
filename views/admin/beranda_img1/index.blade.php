@@ -77,8 +77,8 @@
                 <div class="card-columns">
                     @foreach ($beranda_img1 as $asu)
                         <div class="card" style="background-color: rgb(196, 199, 191)">
-                            <a href="{{ url($asu->image) }}" target="_blank"><img class="card-img-top"
-                                    src="{{ url($asu->image) }}" alt="Card image cap"></a>
+                            <a href="{{ url("public/$asu->image") }}" target="_blank"><img class="card-img-top"
+                                    src="{{ url("public/$asu->image") }}" alt="Card image cap"></a>
                             <div class="card-body">
                                 <a href="{{ route('beranda_img1.edit', $asu->id) }}"><button type="submit"
                                         class="btn btn-rounded btn-warning btn-icon-text btn-sm btn-block">

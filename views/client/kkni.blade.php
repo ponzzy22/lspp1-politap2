@@ -17,7 +17,7 @@
                                 <h1 class="u-custom-font u-font-merriweather u-text u-text-default u-title u-text-1"
                                     data-animation-name="customAnimationIn" data-animation-duration="1000"><span
                                         class="u-file-icon u-icon u-text-white u-icon-1"><img
-                                            src="{{ url('public/images/logo2/16.png') }}" alt=""></span>&nbsp;KKNI
+                                            src="{{ asset('public/images/logo2/16.png') }}" alt=""></span>&nbsp;KKNI
 
                                 </h1>
                             </div>
@@ -31,7 +31,7 @@
     <section class="u-align-center u-clearfix u-expand-resize u-grey-10 u-video-cover u-section-3" id="carousel_c631"><br>
         @foreach ($file as $asu)
                 <h2>{{ $asu->file }}</h2>
-                <embed src="{{ url($asu->image) }}" width="75%" height="300px"><br><br>
+                <embed src="{{ url("public/$asu->image") }}" width="75%" height="300px"><br><br>
         @endforeach
     </section>
 

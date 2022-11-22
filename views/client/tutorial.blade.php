@@ -9,7 +9,7 @@
 
 @section('isi')
     <!-- ***** Header ***** -->
-    <div style="background-image: url('{{ url('public/general/assets/images/head1.jpg') }}')" class="page-heading header-text">
+    <div style="background-image: url('{{ asset('public/general/assets/images/head1.jpg') }}')" class="page-heading header-text">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -33,7 +33,7 @@
                         <div class="col-md-12">
                             @foreach ($tutorial2 as $asu)
                                 @if ($asu->image)
-                                    <embed src="{{ url($asu->image) }}" width="100%" height="700px"
+                                    <embed src="{{ url("public/$asu->image") }}" width="100%" height="700px"
                                         type="application/pdf">
                                 @else
                                     <h1>Tidak Ada File</h1>

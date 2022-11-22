@@ -248,9 +248,9 @@
                                                     <td>{{ $asu->nik }}</td>
                                                     <td>
                                                         @if ($asu->image)
-                                                            <img src="{{ url($asu->image) }}" alt="">
+                                                            <img src="{{ url("public/$asu->image") }}" alt="">
                                                         @else
-                                                            <img src="{{ url('public/general/assets/images/photo.jpg') }}"
+                                                            <img src="{{ asset('public/general/assets/images/photo.jpg') }}"
                                                                 alt="">
                                                         @endif
                                                     </td>

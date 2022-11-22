@@ -25,7 +25,7 @@
     <div class="card col-md-12">
         <div class="card-body">
             <h4 class="card-title">Nama File : {{ $file->file }}</h4>
-            <embed src="{{ url($file->image) }}" class="col-md-12" height="500px" type="application/pdf">
+            <embed src="{{ url("public/$file->image") }}" class="col-md-12" height="500px" type="application/pdf">
             <div class="card-body">
             </div>
         </div>

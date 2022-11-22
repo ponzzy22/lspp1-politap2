@@ -25,12 +25,12 @@
         <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row default-layout-navbar">
             <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
                 <a class="navbar-brand brand-logo" href="{{ route('dashasesi.index') }}"><img
-                        src="{{ url('public/assets/images/logo/lsp1.png') }}" alt="logo" /></a>
+                        src="{{ asset('public/assets/images/logo/lsp1.png') }}" alt="logo" /></a>
                 <!-- /////////////////////////////////// -->
                 <!-- LOGO MINI -->
                 <!-- /////////////////////////////////// -->
                 <a class="navbar-brand brand-logo-mini" href="#"><img
-                        src="{{ url('public/assets/images/logo/mini3.png') }}" alt="logo" /></a>
+                        src="{{ asset('public/assets/images/logo/mini3.png') }}" alt="logo" /></a>
             </div>
             <!-- /////////////////////////////////// -->
             <!-- MENU NAVIGASI -->
@@ -70,7 +70,7 @@
                             @if (Auth::user()->image)
                                 <img src="{{ url(Auth::user()->image) }}" alt="profile">
                             @else
-                                <img src="{{ url('public/public/general/assets/images/photo.jpg') }}" alt="profile">
+                                <img src="{{ asset('public/public/general/assets/images/photo.jpg') }}" alt="profile">
                             @endif
                         </a>
                         <div class="dropdown-menu dropdown-menu-right navbar-dropdown"
@@ -132,7 +132,7 @@
                                 @if (Auth::user()->image)
                                     <img src="{{ url(Auth::user()->image) }}" alt="profile">
                                 @else
-                                    <img src="{{ url('public/general/assets/images/photo.jpg') }}" alt="profile">
+                                    <img src="{{ asset('public/general/assets/images/photo.jpg') }}" alt="profile">
                                 @endif
                             </div>
                             <div class="profile-name">

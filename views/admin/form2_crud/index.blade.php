@@ -1,5 +1,4 @@
-
-	@extends('layout/admin1')
+@extends('layout/admin1')
 @section('isi')
     @include('layout/verifikasi')
     {{-- <---------------------- PAGE HEADER ----------------------> --}}
@@ -26,17 +25,16 @@
                     </a>
                 </h6>
             </div>
-            <div id="collapse-11" class="collapse" role="tabpanel" aria-labelledby="heading-11"
-                data-parent="#accordion-4">
+            <div id="collapse-11" class="collapse" role="tabpanel" aria-labelledby="heading-11" data-parent="#accordion-4">
                 <div class="card-body">
                     <form action="{{ route('formapl2.store') }}" method="POST" class="form-sample">
                         @csrf
                         <div class="row">
-                        	<div class="col-md-6">
+                            <div class="col-md-6">
                                 <div class="form-group row">
                                     <label class="col-sm-3 col-form-label">Nama Skema</label>
                                     <div class="col-sm-9">
-                                       <select class="form-control" name="skema">
+                                        <select class="form-control" name="skema">
                                             <option value="" holder>Pilih Prodi</option>
                                             @foreach ($skema as $result)
                                                 <option value="{{ $result->skema }}">{{ $result->skema }}</option>
@@ -56,7 +54,8 @@
                                         <select class="form-control" name="kode">
                                             <option value="" holder>Pilih Prodi</option>
                                             @foreach ($skema as $result)
-                                                <option value="{{ $result->kode_skema }}">{{ $result->skema }} - {{$result->kode_skema}}</option>
+                                                <option value="{{ $result->kode_skema }}">{{ $result->skema }} -
+                                                    {{ $result->kode_skema }}</option>
                                                 select
                                             @endforeach
                                         </select>
@@ -126,11 +125,13 @@
                                                         </button>
                                                         <div class="dropdown-menu"
                                                             aria-labelledby="dropdownMenuSizeButton3">
-                                                            <a href="{{ route('formapl2.show', Crypt::encryptString($asu->id)) }}"><button
+                                                            <a
+                                                                href="{{ route('formapl2.show', Crypt::encryptString($asu->id)) }}"><button
                                                                     type="submit" class="btn btn-success btn-block"><i
                                                                         class="fa fa-list "></i> Lihat Formulir
                                                                 </button></a>
-                                                            <a href="{{ route('formapl2.edit', Crypt::encryptString($asu->id)) }}"><button
+                                                            <a
+                                                                href="{{ route('formapl2.edit', Crypt::encryptString($asu->id)) }}"><button
                                                                     type="submit" class="btn btn-warning btn-block"><i
                                                                         class="fa fa-edit "></i> Isi Formulir</button></a>
                                                             <form action="{{ route('formapl2.destroy', $asu->id) }}"
@@ -141,12 +142,12 @@
                                                                 <a href=""><button type="submit"
                                                                         class="btn btn-danger btn-block"><i
                                                                             class="fa fa-trash "></i> Hapus
-                                       
+
                                                             </form>
                                                         </div>
                                                     </td>
                                                     <td class="">{{ $asu->kode }}</td>
-                                                    <td>{{ $asu->skema }}</td>                                                   
+                                                    <td>{{ $asu->skema }}</td>
                                                 </tr>
                                             @endforeach
                                         </tbody>
@@ -160,4 +161,3 @@
         </div>
     </div>
 @endsection
-

@@ -37,7 +37,7 @@
                         <button type="submit" class="btn btn-info btn-block"><i class="fas fa-save"></i>
                             Update</button>
                     </form><br>
-                    <img src="{{ url($asu->image) }}" width="550px" alt="">
+                    <img src="{{ url("public/$asu->image") }}" width="550px" alt="">
                 </div>
             @endforeach
         </div>
@@ -55,7 +55,7 @@
                         <button type="submit" class="btn btn-info btn-block"><i class="fas fa-save"></i>
                             Update</button><br>
                     </form>
-                    <img src="{{ url($asu->image) }}" width="550px" alt="">
+                    <img src="{{ url("public/$asu->image") }}" width="550px" alt="">
                 </div>
             @endforeach
         </div>

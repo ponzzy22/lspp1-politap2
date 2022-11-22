@@ -7,7 +7,7 @@
 @endsection
 @section('isi')
     <!-- ***** Header ***** -->
-    <div style="background-image: url('{{ url('public/general/assets/images/head1.jpg') }}')" class="page-heading header-text">
+    <div style="background-image: url('{{ asset('public/general/assets/images/head1.jpg') }}')" class="page-heading header-text">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -146,7 +146,7 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="left-image-logo">
-                                    <img src="{{ url('public/general/assets/images/lsp_big.png') }}">
+                                    <img src="{{ asset('public/general/assets/images/lsp_big.png') }}">
                                 </div>
                             </div>
                         </div>

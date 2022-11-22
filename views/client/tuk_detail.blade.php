@@ -17,9 +17,9 @@
                             <div class="col-md-6">
                                 <div class="left-image">
                                     @if ($tuk->image)
-                                    <img src="{{ url($tuk->image) }}" alt="">
+                                    <img src="{{ url("public/$tuk->image") }}" alt="">
                                     @else
-                                    <img src="{{ url('public/general/assets/images/Gedung-Kuliah-I-Laboratorium-Politeknik-Negeri-Ketapang.jpg') }}" alt="">
+                                    <img src="{{ asset('public/general/assets/images/Gedung-Kuliah-I-Laboratorium-Politeknik-Negeri-Ketapang.jpg') }}" alt="">
                                     @endif
                                 </div>
                             </div>

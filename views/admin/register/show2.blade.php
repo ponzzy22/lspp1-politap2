@@ -5,5 +5,5 @@
 @endsection
 
 @section('isi')
-<embed src="{{ url($xnxx->id) }}" type="pdf">
+<embed src="{{ url("public/$xnxx->id") }}" type="pdf">
 @endsection

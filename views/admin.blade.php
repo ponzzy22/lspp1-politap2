@@ -220,7 +220,7 @@ Dashboard | Admin LSP POLITAP
                 <div class="card-body">
                     @foreach ($datapemegang as $asu)
                         <div class="list d-flex align-items-center border-bottom py-3">
-                            <img class="img-sm rounded-circle" src="{{ $asu->image }}" alt="">
+                            <img class="img-sm rounded-circle" src="{{ "public/$asu->image" }}" alt="">
                             <div class="wrapper w-100 ml-3">
                                 <p class="mb-0"><b>{{ $asu->user_name }} </b></p>
                                 <div class="d-flex justify-content-between align-items-center">
@@ -260,22 +260,22 @@ Dashboard | Admin LSP POLITAP
                 <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
                     <div class="statistics-item">
                         <div class="card-img">
-                            <img src="{{ url('public/general/assets/images/bnsp.png') }}" width="150px" alt="">
+                            <img src="{{ asset('public/general/assets/images/bnsp.png') }}" width="150px" alt="">
                         </div>
                     </div>
                     <div class="statistics-item">
                         <div class="card-img">
-                            <img src="{{ url('public/general/assets/images/kemendikbud_small.png') }}" width="90px" alt="">
+                            <img src="{{ asset('public/general/assets/images/kemendikbud_small.png') }}" width="90px" alt="">
                         </div>
                     </div>
                     <div class="statistics-item">
                         <div class="card-img">
-                            <img src="{{ url('public/general/assets/images/politap_small.png') }}" width="90px" alt="">
+                            <img src="{{ asset('public/general/assets/images/politap_small.png') }}" width="90px" alt="">
                         </div>
                     </div>
                     <div class="statistics-item">
                         <div class="card-img">
-                            <img src="{{ url('public/general/assets/images/lsp_small.jpg') }}" width="110px" alt="">
+                            <img src="{{ asset('public/general/assets/images/lsp_small.jpg') }}" width="110px" alt="">
                         </div>
                     </div>
                     <div class="statistics-item">

@@ -16,7 +16,7 @@
                                 <h1 class="u-custom-font u-font-merriweather u-text u-text-default u-title u-text-1"
                                     data-animation-name="customAnimationIn" data-animation-duration="1000"><span
                                         class="u-file-icon u-icon u-text-black u-icon-1"><img
-                                            src="{{ url('public/images/logo4/SASDS.png') }}" alt=""></span>Visi Misi
+                                            src="{{ asset('public/images/logo4/SASDS.png') }}" alt=""></span>Visi Misi
                                     dan Motto LSP - POLITAP
                                 </h1>
                                 <div class="u-border-3 u-border-custom-color-1 u-line u-line-horizontal u-line-1"

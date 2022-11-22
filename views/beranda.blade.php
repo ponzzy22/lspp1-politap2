@@ -15,7 +15,7 @@
             <!-- Item -->
             @foreach ($carousel as $asu)
                 <div class="item item-1">
-                    <div style="background-image: url('{{ url($asu->image) }}')" class="img-fill">
+                    <div style="background-image: url('{{ "public/$asu->image" }}')" class="img-fill">
                         {{-- <div class="text-content">
                         <h6>we are ready to help you</h6>
                         <h4>Financial Analysis<br>&amp; Consulting</h4>
@@ -123,7 +123,7 @@
                 @foreach ($artikel as $asu)
                     <div class="col-md-4">
                         <div class="service-item">
-                            <img src="{{ url($asu->image) }}" alt="">
+                            <img src="{{ url("public/$asu->image") }}" alt="">
                             <div class="down-content">
                                 <h4> {{ $asu->title }}</h4>
                                 <p> {{ $asu->excerpt }} </p>
@@ -205,11 +205,11 @@
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                                <img src="{{ $asu->image }}" alt="Avatar" style="width:230px; margin: 12px">
+                                <img src="{{ "public/$asu->image" }}" alt="Avatar" style="width:230px; margin: 12px">
                             </div>
                             <div class="flip-card-back">
                                 <br><br><br><br>
-                                <img src="{{ $asu->image }}" width="70px" alt="">
+                                <img src="{{ "public/$asu->image" }}" width="70px" alt="">
                                 <p class="text-white">{{ $asu->nama }}</p>
                                 <p class="text-white">{{ $asu->keterangan }}</p>
                             </div>
@@ -283,20 +283,20 @@
                     <table class="table">
                         <tr>
                             <td align="center" style="width: 200px"><a href="https://bnsp.go.id/" target="_blank"
-                                    rel="noopener noreferrer"><img src="{{ url('public/general/urls/images/bnsp.png') }}"
+                                    rel="noopener noreferrer"><img src="{{ asset('public/general/urls/images/bnsp.png') }}"
                                         height="100px"></a>
                             </td>
                             <td align="center" style="width: 200px"><a href="https://www.kemdikbud.go.id/"
                                     target="_blank" rel="noopener noreferrer"><img
-                                        src="{{ url('public/general/urls/images/kemendikbud_small.png') }}"
+                                        src="{{ asset('public/general/urls/images/kemendikbud_small.png') }}"
                                         height="100px"></a></td>
                             <td align="center" style="width: 200px"><a href="https://politap.ac.id/" target="_blank"
                                     rel="noopener noreferrer"><img
-                                        src="{{ url('public/general/urls/images/politap_small.png') }}"
+                                        src="{{ asset('public/general/urls/images/politap_small.png') }}"
                                         height="100px"></a>
                             </td>
                             <td align="center" style="width: 200px"><a href="{{ route('/') }}"><img
-                                        src="{{ url('public/general/urls/images/lsp_small.jpg') }}" height="100px"></a>
+                                        src="{{ asset('public/general/urls/images/lsp_small.jpg') }}" height="100px"></a>
                             </td>
                         </tr>
                     </table>

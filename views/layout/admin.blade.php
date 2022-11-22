@@ -32,12 +32,12 @@
         <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row default-layout-navbar">
             <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
                 <a class="navbar-brand brand-logo" href="{{ route('admin') }}"><img
-                        src="{{ url('public/assets/images/logo/lsp1.png') }}" alt="logo" /></a>
+                        src="{{ asset('public/assets/images/logo/lsp1.png') }}" alt="logo" /></a>
                 <!-- /////////////////////////////////// -->
                 <!-- LOGO MINI -->
                 <!-- /////////////////////////////////// -->
                 <a class="navbar-brand brand-logo-mini" href="{{ route('admin') }}"><img
-                        src="{{ url('public/assets/images/logo/mini3.png') }}" alt="logo" /></a>
+                        src="{{ asset('public/assets/images/logo/mini3.png') }}" alt="logo" /></a>
             </div>
             <!-- /////////////////////////////////// -->
             <!-- MENU NAVIGASI -->
@@ -87,7 +87,7 @@
                     <li style="color: #fff" class="nav-item nav-profile dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown"
                             aria-expanded="false">
-                                <img src="{{ url('public/general/assets/images/lsp_small.jpg') }}" alt="profile">
+                                <img src="{{ asset('public/general/assets/images/lsp_small.jpg') }}" alt="profile">
                         </a>
                         <div class="dropdown-menu dropdown-menu-right navbar-dropdown"
                             aria-labelledby="profileDropdown">
@@ -179,7 +179,7 @@
                     <li class="nav-item nav-profile">
                         <div id="home" class="nav-link">
                             <div class="profile-image">
-                                    <img src="{{ url('public/general/assets/images/lsp_small.jpg') }}" alt="profile">
+                                    <img src="{{ asset('public/general/assets/images/lsp_small.jpg') }}" alt="profile">
                             </div>
                             <div class="profile-name">
                                 <p class="name">

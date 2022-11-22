@@ -131,7 +131,7 @@
                         @foreach ($galeri->galeri_fotos as $foto)
                             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
                                 <figure class="effect-text-in">
-                                    <img src="{{ url($foto->image) }}" alt="image">
+                                    <img src="{{ url("public/$foto->image") }}" alt="image">
                                     <figcaption>
                                         <form action="{{ route('delete_galeri_foto.destroy', $foto->id) }}" method="POST"
                                             onsubmit="return confirm('Apa anda yakin akan menghapus Data ini (Yakinkan lah aku)')">

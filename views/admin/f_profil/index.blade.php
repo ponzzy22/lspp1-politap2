@@ -112,7 +112,7 @@
                             </div>
                             <div id="collapse56" class="collapse" aria-labelledby="headingThree" data-parent="#accordion-1">
                                 <div class="card-body">
-                                    <img src="{{ url($asu->image) }}" style="width: 200px" alt="">
+                                    <img src="{{ url("public/$asu->image") }}" style="width: 200px" alt="">
                                 </div>
                             </div>
                         </div>

@@ -148,13 +148,13 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul style="padding-left: 1%">
                         <li class="nav-item">
-                            <img style="margin: 10px" src="{{ url('public/general/assets/images/bnsp.png') }}"
+                            <img style="margin: 10px" src="{{ asset('public/general/assets/images/bnsp.png') }}"
                                 height="40px">
-                            <img style="margin: 10px" src="{{ url('public/general/assets/images/kemendikbud_small.png') }}"
+                            <img style="margin: 10px" src="{{ asset('public/general/assets/images/kemendikbud_small.png') }}"
                                 height="40px">
-                            <img style="margin: 10px" src="{{ url('public/general/assets/images/politap_small.png') }}"
+                            <img style="margin: 10px" src="{{ asset('public/general/assets/images/politap_small.png') }}"
                                 height="40px">
-                            <img style="margin: 10px" src="{{ url('public/general/assets/images/lsp_small.jpg') }}"
+                            <img style="margin: 10px" src="{{ asset('public/general/assets/images/lsp_small.jpg') }}"
                                 height="40px">
                         </li>
                     </ul>

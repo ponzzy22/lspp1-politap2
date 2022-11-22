@@ -20,7 +20,7 @@
                         @foreach ($artikel as $asu)
                         <table>
                             <tr>
-                                <td><img src="{{ url($asu->image) }}" width="350px"></td>
+                                <td><img src="{{ url("public/$asu->image") }}" width="350px"></td>
                             </tr>
                             <tr>
                                 <td><a href='{{ route('berita_detail', Crypt::encryptString($asu->id)) }}'
@@ -33,7 +33,7 @@
                 <div class="col-md-8">
                     <section class='tabs-content'>
                         <article id='tabs-1'>
-                            <img src="{{ url($berita->image) }}" alt="">
+                            <img src="{{ url("public/$berita->image") }}" alt="">
                             <h4>{{ $berita->title }}</h4>
                             <h6 class="text-danger">{{ $berita->created_at->format('d/M/Y') }}</h6>
                             <br>

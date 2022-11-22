@@ -58,7 +58,7 @@
                         @if (Auth::user()->image)
                             <img src="{{ url(Auth::user()->image) }}" class="img-lg rounded" alt="image">
                         @else
-                            <img src="{{ url('public/general/urls/images/photo.jpg') }}" class="img-lg rounded" alt="image">
+                            <img src="{{ asset('public/general/urls/images/photo.jpg') }}" class="img-lg rounded" alt="image">
                         @endif
                         <div class="ml-3">
                             <h6 class="text-danger font-weight-bold">{{ Auth::user()->name }}</h6>

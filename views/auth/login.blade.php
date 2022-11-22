@@ -25,13 +25,13 @@
                 <div class="col-lg-6">
                     <div class="card1 pb-5">
                         <div class="row px-3 justify-content-center mt-4 mb-5 border-line">
-                            <img src="{{ url('public/assets/images/logo/bnsp.png') }}" class="logo">
-                            <img src="{{ url('public/assets/images/logo/kemendikbud_small.png') }}" class="logo3">
-                            <img src="{{ url('public/assets/images/logo/politap_small.png') }}" class="logo3">
-                            <img src="{{ url('public/assets/images/logo/lsp_small.jpg') }}" class="logo2"><br><br>
+                            <img src="{{ asset('public/assets/images/logo/bnsp.png') }}" class="logo">
+                            <img src="{{ asset('public/assets/images/logo/kemendikbud_small.png') }}" class="logo3">
+                            <img src="{{ asset('public/assets/images/logo/politap_small.png') }}" class="logo3">
+                            <img src="{{ asset('public/assets/images/logo/lsp_small.jpg') }}" class="logo2"><br><br>
                         </div>
                         <div class="row px-3 justify-content-center mt-4 mb-5 border-line">
-                            <img src="{{ url('public/assets/images/auth/login_asesi.png') }}" class="image">
+                            <img src="{{ asset('public/assets/images/auth/login_asesi.png') }}" class="image">
                         </div>
                     </div>
                 </div>

@@ -50,7 +50,7 @@
                         </form>
                     </div>
                     <div class="col-md-5">
-                        <img src="{{ url($asu2->image) }}" width="550px" alt="">
+                        <img src="{{ url("public/$asu2->image") }}" width="550px" alt="">
                     </div><br>
                 @endforeach
             </div>

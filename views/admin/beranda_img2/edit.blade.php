@@ -107,7 +107,7 @@
             <div class="card-title">
                 <h4>Preview</h4>
             </div>
-            <img src="{{ url($pengelola->image) }}" width="200px">
+            <img src="{{ url("public/$pengelola->image") }}" width="200px">
             <div class="card-body">
                 <h4 class="card-text">Nama : {{ $pengelola->nama }}</h4>
                 <h5 class="card-text">Jabatan : {!! $pengelola->keterangan !!}</h5>

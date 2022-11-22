@@ -35,9 +35,9 @@
                     <div class="col-lg-4">
                         <div class="border-bottom text-center pb-4">
                             @if ($asesor->image)
-                                <img src="{{ url($asesor->image) }}" alt="profile" class="img-lg rounded-circle mb-3">
+                                <img src="{{ url("public/$asesor->image") }}" alt="profile" class="img-lg rounded-circle mb-3">
                             @else
-                                <img src="{{ url('public/general/assets/images/photo.jpg') }}" alt="profile" class="img-lg rounded-circle mb-3">
+                                <img src="{{ asset('public/general/assets/images/photo.jpg') }}" alt="profile" class="img-lg rounded-circle mb-3">
                             @endif
                             <h4>{{ $asesor->nama }}</h4>
                             <h6 class="text text-muted">#{{ $asesor->nik }}</h6>

@@ -101,7 +101,7 @@
             <div class="card-title">
                 <h4>Preview</h4>
             </div>
-            <img class="card-img-top" src="{{ url($berita->image) }}" alt="Card image cap">
+            <img class="card-img-top" src="{{ url("public/$berita->image") }}" alt="Card image cap">
             <div class="card-body">
                 <h4 class="card-title">{{ $berita->title }}</h4>
                 <p class="card-text">{!! $berita->body !!}</p>

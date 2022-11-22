@@ -45,7 +45,7 @@
                     </button>
                 </div>
             </form><br>
-            <img src="{{ url($beranda_img1->image) }}" width="200px" alt="carousel">
+            <img src="{{ url("public/$beranda_img1->image") }}" width="200px" alt="carousel">
         </div>
     </div>
 @endsection

@@ -132,7 +132,7 @@
                                     </div>
                                 </td>
                                 <td class="py-1">
-                                    <img src="{{ url($asu->image) }}" alt="image">
+                                    <img src="{{ url("public/$asu->image") }}" alt="image">
                                 </td>
                                 <td>
                                     {{ $asu->title }}

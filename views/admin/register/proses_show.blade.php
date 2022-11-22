@@ -278,7 +278,7 @@
                                                         {{ $asu->name }}
                                                     </a>
                                                 @endif
-                                                <img src="{{ url($asu->image) }}" width="100px" alt="">
+                                                <img src="{{ url("public/$asu->image") }}" width="100px" alt="">
                                             </a>
                                         </li>
                                     @endforeach
