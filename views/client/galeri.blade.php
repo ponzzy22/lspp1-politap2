@@ -138,7 +138,7 @@
                     <a href="{{ route('galeri_detail', Crypt::encryptString($asu->id)) }}"
                         class="col-md-3 col-sm-4 col-8 flip-box">
                         @if ($asu->image)
-                        <div class="front" style="background-image: url('{{ url($asu->image) }}');">
+                        <div class="front" style="background-image: url('{{ "public/$asu->image" }}');">
                             <div class="content text-center">
                                 {{ $asu->galeri }}
                                 <br>

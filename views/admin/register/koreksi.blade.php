@@ -151,7 +151,7 @@
                                             </div>
                                             <div class="modal-body">
                                                 @if ($asu->image)
-                                                    <img src="{{ url("public/$asu->image") }}" width="100%" alt="">
+                                                <embed src="{{ url($asu->image) }}" width="100%" height="400%" alt="">
                                                 @else
                                                     <h2>TIDAK ADA DATA</h2>
                                                 @endif

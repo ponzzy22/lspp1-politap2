@@ -238,7 +238,7 @@
         @foreach ($berita as $asu)
         <div class="news-card">
             <a href="#" class="news-card__card-link"></a>
-            <img src="{{ $asu->image }}"
+            <img src="{{ url("public/$asu->image") }}"
                 alt="" class="news-card__image">
             <div class="news-card__text-wrapper">
                 <h2 class="news-card__title">{{ $asu->title }}</h2>

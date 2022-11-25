@@ -220,7 +220,7 @@ Dashboard | Admin LSP POLITAP
                 <div class="card-body">
                     @foreach ($datapemegang as $asu)
                         <div class="list d-flex align-items-center border-bottom py-3">
-                            <img class="img-sm rounded-circle" src="{{ "public/$asu->image" }}" alt="">
+                            <img class="img-sm rounded-circle" src="{{ url("public/$asu->image") }}" alt="">
                             <div class="wrapper w-100 ml-3">
                                 <p class="mb-0"><b>{{ $asu->user_name }} </b></p>
                                 <div class="d-flex justify-content-between align-items-center">

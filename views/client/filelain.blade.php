@@ -114,7 +114,7 @@
                     </div>
                     <div id="collapse-240" class="collapse show " aria-labelledby="heading-240" data-parent="#accordion">
                         <div class="card-body accordion-body">
-                            <embed src="{{ url($asu->image) }}" width="100%" height="400px" type="application/pdf">
+                            <embed src="{{ url("public/$asu->image") }}" width="100%" height="400px" type="application/pdf">
                         </div>
                     </div>
                 </div>

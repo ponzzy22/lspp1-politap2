@@ -156,7 +156,7 @@
                     @foreach ($pengelola as $asu)
                         <div style="margin-bottom: 7%; margin-right: 3%" class="content">
                             <div class="card">
-                                <div class="firstinfo"><img src="{{ $asu->image }}" />
+                                <div class="firstinfo"><img src="{{ url("public/$asu->image") }}" />
                                     <div class="profileinfo">
                                         <h1 class="font-weight-bold text-dark">{{ $asu->nama }}</h1>
                                         <h3 class="font-weight-bold">{{ $asu->keterangan }}</h3>
